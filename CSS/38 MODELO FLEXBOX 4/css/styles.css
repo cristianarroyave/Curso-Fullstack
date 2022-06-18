@@ -1,0 +1,27 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    height: 100vh;
+    border: 4px solid tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Se refiere al eje primario */
+    align-items: center; /* valor por defecto */
+}
+
+.caja.derecha {
+    align-self: flex-end; /* alinea a elementos hijos en el eje secundario */
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: aqua;
+    margin: 20px;
+}

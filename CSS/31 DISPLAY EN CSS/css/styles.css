@@ -1,0 +1,19 @@
+p,
+span {
+    border: 1px solid orange;
+}
+
+/* Propiedad display para modificar el comportamiento
+ de los elementos */
+
+ .en-linea {
+    display: inline;
+ }
+
+ .en-bloque {
+    display: block;
+ }
+
+ .en-linea-y-bloque {
+    display: inline-block; /* En linea mientras quepan */
+ }

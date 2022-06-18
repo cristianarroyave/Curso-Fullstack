@@ -1,0 +1,28 @@
+.caja-1 {
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    background-color: violet;
+}
+
+.caja-2 {
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    background-color: green;
+}
+
+.caja-3 {
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    background-color: tomato;
+}
+
+.apagado {
+    display: none;
+}
+
+.oculto {
+    visibility: hidden;
+}

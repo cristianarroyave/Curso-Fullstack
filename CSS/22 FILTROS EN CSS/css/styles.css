@@ -1,0 +1,10 @@
+img {
+    width: 250px;
+    margin: 20px;
+    filter: grayscale(50%);
+}
+
+img:hover {
+    filter: none;
+}
+

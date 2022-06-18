@@ -1,0 +1,21 @@
+.padre {
+    border: solid 2px green;
+    margin: 40px;
+    padding: 40px;
+    color: crimson; /* Heredable */
+
+}
+
+.hijo {
+    border: solid 2px violet;
+    margin: 40px;
+    padding: 40px;
+    color: purple;
+}
+
+.nieto {
+    border: inherit; /* Heredar del padre */
+    margin: 40px;
+    padding: 40px;
+    color: initial; /* Eliminar la herencia y establecer su valor por defecto */
+}

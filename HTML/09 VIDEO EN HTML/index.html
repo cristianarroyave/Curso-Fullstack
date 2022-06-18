@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video en HTML</title>
+</head>
+<body>
+    <!-- Elemento de video con atributos basicos -->
+    <video src="media/waterfall.mp4"
+           width="500px"
+           controls
+           autoplay></video>
+    <!-- Elemento de video con atributos adicionales -->
+    <video src="media/waterfall.mp4"
+           controls
+           width="500px"
+           muted
+           preload="none"
+           poster="media/waterfall.jpeg"></video>
+    <!-- Elemento video con subtítulos -->
+    <video width="500px" controls>
+        <source src="media/waterfall.mp4">
+        <track src="media/sub_es.vtt"
+               srclang="es"
+               label="Castellano"
+               default>
+        <track src="media/sub_en.vtt"
+               srclang="en"
+               label="Inglés"
+               default>
+    </video>
+</body>
+</html>

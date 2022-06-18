@@ -1,0 +1,19 @@
+.izquierda {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.derecha {
+    float: right;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.titulo {
+    clear: both;
+}

@@ -1,0 +1,40 @@
+/* Prioridad de CSS
+1. Estilos en linea con atributo style
+2. Estilos dentro de la etiqueta style
+3. Archivos externos en css */
+
+/* p {
+    color: grey;
+} */
+
+/* Especificidad según combinación de selectores
+
+1.- numero de selectores por id #
+2.- numero de selectores por clase . o pseudoclase :
+3.- numero de elementos (nombre) o pseudoelemento :: */
+
+p {
+    color: grey; /* 001 */
+}
+
+.texto {
+    color: orange; /* 011 */
+}
+
+li {
+    color: red;
+}
+
+p ~ li {
+    color: blue;
+}
+
+ul .destacado {
+    color: green;
+}
+
+/* Operador important (es una mala practica)*/
+
+li {
+    color: pink !important;
+}

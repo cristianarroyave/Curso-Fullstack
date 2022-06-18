@@ -1,0 +1,46 @@
+ul {
+    list-style: none;
+    /* list-style-position: inside; */
+}
+
+li {
+    font-size: 28px;
+}
+
+/* Pseudoelemento before (renderizar un contenido antes del elemento) */
+
+li::before {
+    content: '😊';
+    position: relative;
+    right: 10px;
+    font-size: 50px;
+}
+
+.darth-vader li:before{
+    content: url('../img/icons8-darth-vader.svg');
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+/* Pseudoclases para elementos repetitivos */
+
+/*li:first-child {
+    color: orange;
+}
+
+li:last-child {
+    color: tomato;
+}
+
+li:nth-child(3) {
+    color: green;
+}*/
+
+li:nth-child(odd){
+    color: violet;
+}
+
+li:nth-child(even){
+    color: green;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'brushed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Lobster-Regular.ttf');
+}
+.franja {
+    background-color: #52b7bd;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.franja p {
+    text-align: center;
+    font-family: 'brushed';
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.franja img {
+    margin-top: -40px;
+}

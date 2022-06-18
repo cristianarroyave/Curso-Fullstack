@@ -1,0 +1,38 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 4px solid orange;
+    height: 100vh;
+    display: flex; /* con esto se establece el modelo flex, flex provoca que todos los elementos pasen a ser en linea */
+    justify-content: space-around;
+    /* Valores para justify content 
+        - flex-start (por defecto) alinear al inicio
+        - center centra
+        - flex-end al final del eje
+        - space-between reparte los espacios desde los extremos 
+        - space-around reparte los espacios entre todos los elementos*/
+    align-items: center;
+    /* Valores para align-items
+        - flex-start al inicio
+        - center centra
+        - flex-end al final
+        - stretch ( por defecto ) */
+    
+}
+
+.caja {
+    width: 125px;
+    height: 125px;
+}
+
+.azul { background-color: blue; }
+
+.verde { background-color: green; }
+
+.roja { background-color: red; }
+
+.morada { background-color: purple; }
