@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    color: crimson;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: crimson;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
