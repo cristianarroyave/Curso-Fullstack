@@ -1,0 +1,138 @@
+<div class="card">
+    <h1>Pipes de texto</h1>
+    <table>
+        <tr>
+            <th>Nombre pipe</th>
+            <th>Valor sin el pipe</th>
+            <th>Valor con el pipe</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <td>uppercase</td>
+            <td>{{texto}}</td>
+            <td>{{texto | uppercase}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>lowercase</td>
+            <td>{{texto}}</td>
+            <td>{{texto | lowercase}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>titlecase</td>
+            <td>{{texto}}</td>
+            <td>{{texto | titlecase}}</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div class="card">
+    <h1>Pipe slice</h1>
+    <table>
+        <tr>
+            <th>Nombre pipe</th>
+            <th>Valor sin el pipe</th>
+            <th>Valor con el pipe</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <td>slice</td>
+            <td>{{id}}</td>
+            <td>{{id | slice: -3}}</td>
+            <td>Nº de caracteres</td>
+        </tr>
+    </table>
+</div>
+<div class="card">
+    <h1>Pipe date</h1>
+    <table>
+        <tr>
+            <th>Nombre pipe</th>
+            <th>Valor sin el pipe</th>
+            <th>Valor con el pipe</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>{{ahora}}</td>
+            <td>{{ahora | date: 'dd/MM/yyyy hh:mm'}}</td>
+            <td>Opción numérica con este formato tradicional de fechas 'dd/MM/yyyy hh:mm'</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>{{ahora}}</td>
+            <td>{{ahora | date: 'short'}}</td>
+            <td>Opción texto "long" para una opcion larga "medium" y "short"</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>{{ahora}}</td>
+            <td>{{ahora | date: 'medium'}}</td>
+            <td>Opción texto "long" para una opcion larga "medium" y "short"</td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>{{ahora}}</td>
+            <td>{{ahora | date: 'long'}}</td>
+            <td>Opción texto "long" para una opcion larga "medium" y "short"</td>
+        </tr>
+    </table>
+</div>
+<div class="card">
+    <h1>Pipe decimal</h1>
+    <table>
+        <tr>
+            <th>Nombre pipe</th>
+            <th>Valor sin el pipe</th>
+            <th>Valor con el pipe</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <td>decimal</td>
+            <td>{{importe}}</td>
+            <td>{{importe | number: '5.2-2'}}</td>
+            <td>Nº minimo de enteros.nº maximo de decimales-nºminimo de decimales</td>
+        </tr>
+        <tr>
+            <td>decimal</td>
+            <td>{{importe}}</td>
+            <td>{{importe | number: '.2-2'}}</td>
+            <td>Nº minimo de enteros.nº maximo de decimales-nºminimo de decimales</td>
+        </tr>
+    </table>
+</div>
+<div class="card">
+    <h1>Pipe currency</h1>
+    <table>
+        <tr>
+            <th>Nombre pipe</th>
+            <th>Valor sin el pipe</th>
+            <th>Valor con el pipe</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <td>currency</td>
+            <td>{{importe}}</td>
+            <td>{{importe | currency: 'EUR'}}</td>
+            <td>Nombre de la moneda en string</td>
+        </tr>
+    </table>
+</div>
+<div class="card">
+    <h1>Pipe propio (numero)</h1>
+    <table>
+        <tr>
+            <th>Nombre pipe</th>
+            <th>Valor sin el pipe</th>
+            <th>Valor con el pipe</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <td>numero</td>
+            <td>{{importe}}</td>
+            <td>{{importe | numero: 4: divisa}}</td>
+            <td></td>
+        </tr>
+    </table>
+</div>

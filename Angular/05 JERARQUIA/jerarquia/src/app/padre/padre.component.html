@@ -1,0 +1,6 @@
+<div class="card">
+    <h1>Componente padre</h1>
+    <p>Valor en el padre {{valorPadre}}</p>
+    <app-hijo [valorHijo]="valorPadre" (valor)="getValor($event)"></app-hijo>
+    <app-componente-en-linea></app-componente-en-linea>
+</div>
