@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="form" (ngSubmit)="enviarCliente()">
+            <div class="row">
+                <div class="col-100">
+                    <label>Nombre cliente <span class="danger" *ngIf="form.controls.nombre.invalid">Obligatorio</span></label>
+                    <input type="text" formControlName="nombre">
+                    <label>CIF <span class="danger" *ngIf="form.controls.cif.invalid">CIF obligatorio (9 caracteres)</span></label>
+                    <input type="text" formControlName="cif">
+                    <label>Direccion cliente</label>
+                    <input type="text" formControlName="direccion">
+                    <label>Localidad cliente</label>
+                    <input type="text" formControlName="localidad">
+                </div>
+            </div>
+            <!-- <pre>Estado pristine {{form.controls.cif.pristine}}</pre>
+            <pre>Estado dirty {{form.controls.cif.dirty}}</pre>
+            <pre>Estado touch {{form.controls.cif.touched}}</pre>
+            <pre>Estado untouched {{form.controls.cif.untouched}}</pre>
+            <pre>Estado valid {{form.controls.cif.valid}}</pre>
+            <pre>Estado invalid {{form.controls.cif.invalid}}</pre>
+            <pre>Estado del formulario en general : {{form.valid}}</pre> -->
+            <div class="row">
+                <div class="col-100 flex j-end">
+                    <button [disabled]="form.invalid" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

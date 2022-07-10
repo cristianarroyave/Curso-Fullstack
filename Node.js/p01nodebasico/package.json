@@ -1,0 +1,15 @@
+{
+  "name": "p01nodebasico",
+  "version": "1.0.0",
+  "description": "Descripcion de servidor node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
